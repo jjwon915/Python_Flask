@@ -17,33 +17,32 @@
     <div class="crawling_content">
         <h1>다음 뉴스 랭킹 영역입니다.</h1>
         <ul>
-        {% for i  in daum_news%}
+            {% for i in range(0, daum_len) %}
 
-            <li>{{ i }}</li>
+            <a href="{{daum_href[i]}}"><li>{{ daum_news[i] }}</li></a>
 
-        {% endfor %}
+            {% endfor %}
         </ul>
     </div>
 
     <div class="crawling_content">
         <h1>오늘의 유머 영역입니다.</h1>
-        <ul>
-        {% for i  in today%}
+       <ul>
+            {% for i in range(0, today_len) %}
 
-            <li>{{ i }}</li>
+            <a href="{{today_href[i]}}"><li>{{ today[i] }}</li></a>
 
-        {% endfor %}
+            {% endfor %}
         </ul>
     </div>
 
     <div class="crawling_content">
         <h1>okky 영역입니다.</h1>
         <ul>
-        {% for i  in okky%}
+            {% for i  in range(0, okky_len) %}
+            <a href="{{okky_href[i]}}"><li>{{ okky[i] }}</li></a>
 
-            <li>{{ i }}</li>
-
-        {% endfor %}
+            {% endfor %}
         </ul>
     </div>
 
