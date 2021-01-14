@@ -13,15 +13,39 @@
         <a href="/about">어바웃 페이지로 이동</a>
 
     </div>
-    <div class="daum_news">
+
+    <div class="crawling_content">
         <h1>다음 뉴스 랭킹 영역입니다.</h1>
         <ul>
-        {% for i  in daum%}
+        {% for i  in daum_news%}
 
             <li>{{ i }}</li>
 
         {% endfor %}
         </ul>
     </div>
+
+    <div class="crawling_content">
+        <h1>오늘의 유머 영역입니다.</h1>
+        <ul>
+        {% for i  in today%}
+
+            <li>{{ i }}</li>
+
+        {% endfor %}
+        </ul>
+    </div>
+
+    <div class="crawling_content">
+        <h1>okky 영역입니다.</h1>
+        <ul>
+        {% for i  in okky%}
+
+            <li>{{ i }}</li>
+
+        {% endfor %}
+        </ul>
+    </div>
+
 </body>
 </html>
